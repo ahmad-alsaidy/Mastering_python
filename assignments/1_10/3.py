@@ -1,0 +1,1 @@
+print("\"Name: Osama\"\n\"Age: 38\"\n\"Country: Egypt\"")
