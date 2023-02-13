@@ -36,7 +36,10 @@ os.chdir(r"c:\Users\alsai\Desktop\Python")
 # Assignment 3
 
 file = open("text1.txt", 'r')
-
+# count lines
+# count words
+# count chars
+# count char 'l'
 
 # --------------------------------------
 # Assignment 4 => done
