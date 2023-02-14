@@ -30,23 +30,44 @@ os.chdir(r"c:\Users\alsai\Desktop\Python")
 
 # file = open("text1.txt", 'a')
 
-# file.write("\nAppend => Ezero Web School" * 50)
+# file.write("\nAppend => Elzero Web School" * 50)
 
 # --------------------------------------
 # Assignment 3
 
-file = open("text1.txt", 'r')
-# count lines
-# count words
-# count chars
-# count char 'l'
+infile = open("text1.txt", 'r')
+
+lines = 0
+words = 0
+chars = 0
+charL = 0
+
+for line in infile.readlines():
+    wordList = line.split()
+
+    lines += 1
+
+    words += len(wordList)
+
+    # chars += sum(len(word) for word in wordList)
+
+    chars += len(line.strip(os.linesep))  # after removing the linespace (\r\n)
+
+    # charL += len(line)
+    
+    charL += line.count("l")
+
+print(f"Number of Lines    => {lines}")
+print(f"Number of Words    => {words}")
+print(f"Number of Chars    => {chars}")
+print(f"Number of Char 'l' => {charL}")
 
 # --------------------------------------
 # Assignment 4 => done
 
 i = 50
 
-while i > 40:
-    os.remove(f"text{i}.txt")
+# while i > 40:
+#     os.remove(f"text{i}.txt")
 
-    i -= 1
+#     i -= 1
